@@ -17,6 +17,7 @@
     .columns > div > div {
         flex: 1;
         margin-left: 70px;
+        margin-right: 100px;
     }
 
     .columns > div > div:first-of-type {
