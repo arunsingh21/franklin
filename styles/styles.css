@@ -48,7 +48,7 @@ body {
   font-family: var(--body-font-family);
   line-height: 1.6;
   color: var(--text-color);
-  background-color: red;
+  background-color: white;
   display: none;
 }
 
