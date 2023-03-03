@@ -1,26 +1,80 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@arunsingh21 
+adobe
+/
+helix-project-boilerplate
+Public template
+Fork your own copy of adobe/helix-project-boilerplate
+Code
+Issues
+11
+Pull requests
+5
+Actions
+Security
+Insights
+Beta Try the new code view
+helix-project-boilerplate/blocks/columns/columns.css
+@fkakatie
+fkakatie feat: image-only columns will display first on mobile view
+Latest commit 84aafbd on Jan 12
+ History
+ 2 contributors
+@davidnuescheler@fkakatie
+33 lines (27 sloc)  427 Bytes
+
 .columns > div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .columns img {
-    width: 50%;
+  width: 100%;
 }
 
-@media (min-width: 1900px) {
-    .columns > div {
-        display: flex;
-        align-items: center;
-        flex-direction: unset;
-    }
-
-    .columns > div > div {
-        flex: 1;
-        margin-left: 1000px;
-       
-    }
-
-    .columns > div > div:first-of-type {
-        margin-left: auto;
-    }
+.columns > div > div {
+  order: 1;
 }
+
+.columns > div > .columns-img-col {
+  order: 0;
+}
+
+.columns > div > .columns-img-col img {
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .columns > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 32px;
+  }
+
+  .columns > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+helix-project-boilerplate/columns.css at main · adobe/helix-project-boilerplate
