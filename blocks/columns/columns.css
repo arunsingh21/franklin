@@ -4,7 +4,9 @@
 }
 
 .columns img {
-  width: 30%;
+  width: 90%;
+  height:fit-content;
+    
   
 }
 
@@ -14,21 +16,24 @@
 
 .columns > div > .columns-img-col {
   order: 0;
-}
+ }
 
 .columns > div > .columns-img-col img {
   display: block;
+ 
 }
 
 @media (min-width: 700px) {
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 32px;
+    gap: 40px;
   }
 
   .columns > div > div {
     flex: 1;
     order: unset;
+    color: lightcoral;
+    
   }
 }

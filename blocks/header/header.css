@@ -4,7 +4,7 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
-}
+ }
 
 header nav {
   box-sizing: border-box;
@@ -49,7 +49,7 @@ header nav[aria-expanded=true] {
 }
 
 header nav p {
-  margin: 280px;
+  margin: 400px;
   line-height: 1;
 }
 
@@ -99,7 +99,7 @@ header nav[aria-expanded=false] .nav-hamburger-icon::before,
 header nav[aria-expanded=false] .nav-hamburger-icon::after {
   height: 2px;
   border-radius: 2px;
-  background: palegoldenrod;
+  background: blue;
 }
 
 header nav[aria-expanded=false] .nav-hamburger-icon::before {

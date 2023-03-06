@@ -143,6 +143,10 @@ a.button.secondary, button.secondary {
   color: var(--text-color)
 } 
 
+h3{
+margin-left: 400px;
+  color: lightcoral;
+}
 
 main input {
   font-size: 1.25rem;
